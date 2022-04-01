@@ -1,0 +1,342 @@
+@media screen and (min-width: 769px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ecf2f8;
+  }
+  .card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 100px 10px rgba(65, 65, 65, 0.158);
+            box-shadow: 0px 10px 100px 10px rgba(65, 65, 65, 0.158);
+    border-radius: 10px 10px 10px 10px;
+    height: 40vh;
+    width: 50vw;
+  }
+  .card .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url(../images/drawers.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    height: 100%;
+  }
+  .card section {
+    padding: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+  .card section h3 {
+    color: #48556a;
+    font-size: 1.3vw;
+  }
+  .card section p {
+    font-size: 1vw;
+    color: #6d7f97;
+    line-height: 1.6em;
+    padding: 4% 0;
+  }
+  .card section .person {
+    margin-top: auto;
+    font-size: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card section .person p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card section .name {
+    color: #48556a;
+    font-weight: 700;
+  }
+  .card section .date {
+    color: #9eafc2;
+  }
+  .card section .img_Size {
+    margin-right: 5%;
+    border-radius: 50%;
+    width: 10%;
+  }
+  .card section .share {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: 2%;
+  }
+  .card section .btn {
+    border-radius: 50%;
+    background-color: #ecf2f8;
+    padding: 0.7vw;
+    fill: #6e8098;
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s;
+  }
+  .card section ion-icon {
+    font-size: 1.5vw;
+    cursor: pointer;
+  }
+  .card section .btn:hover {
+    background-color: #6d7f97;
+    fill: white;
+    cursor: pointer;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+  #overlay::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid #48556a;
+    z-index: -1;
+  }
+  #overlay {
+    display: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(128, 128, 128, 0.521);
+            box-shadow: 0 5px 10px 0 rgba(128, 128, 128, 0.521);
+    padding: 1.5vh 2vw;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -135%);
+            transform: translate(-50%, -135%);
+    background-color: #48556a;
+  }
+  #overlay span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #9eafc2;
+    cursor: pointer;
+  }
+  #overlay ion-icon {
+    fill: white;
+    padding-left: 1vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ecf2f8;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 100px 10px rgba(65, 65, 65, 0.158);
+            box-shadow: 0px 10px 100px 10px rgba(65, 65, 65, 0.158);
+    border-radius: 10px 10px 10px 10px;
+    height: 80%;
+    width: 80%;
+  }
+  .card .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url(../images/drawers.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .card section {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+  .card section h3 {
+    color: #48556a;
+    padding: 4%;
+  }
+  .card section p {
+    font-size: 13px;
+    color: #6d7f97;
+    line-height: 1.6em;
+    padding: 4%;
+  }
+  .card section .person {
+    position: relative;
+    margin-top: auto;
+    font-size: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card section .person p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card section .name {
+    color: #48556a;
+    font-weight: 700;
+  }
+  .card section .date {
+    color: #9eafc2;
+  }
+  .card section .img_Size {
+    margin-left: 4%;
+    margin-right: 5%;
+    border-radius: 50%;
+    width: 10%;
+  }
+  .card section .share {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .card section .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    border-radius: 50%;
+    background-color: #ecf2f8;
+    padding: 1vw;
+    fill: #6e8098;
+    z-index: 3;
+  }
+  .card section ion-icon {
+    font-size: 5vw;
+  }
+  .card section .btn:hover {
+    background-color: #6d7f97;
+    fill: white;
+    cursor: pointer;
+  }
+  #overlay {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-radius: 0 0 10px 10px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #48556a;
+  }
+  #overlay span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #9eafc2;
+    padding: 0 5% 0 10%;
+  }
+  #overlay ion-icon {
+    fill: white;
+    padding-right: 3%;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

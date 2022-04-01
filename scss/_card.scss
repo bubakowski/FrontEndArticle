@@ -1,0 +1,94 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $lightgrayishblue;
+}
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	box-shadow: 0px 10px 100px 10px rgba(65, 65, 65, 0.158);
+	border-radius: 10px 10px 10px 10px;
+	height: 40vh;
+	width: 50vw;
+	.img {
+		display: flex;
+		background: url(../images/drawers.jpg) no-repeat;
+
+		background-size: cover;
+		border-radius: 10px 0 0 10px;
+		flex: 3;
+		height: 100%;
+	}
+	section {
+		padding: 4%;
+
+		display: flex;
+		flex-direction: column;
+		flex: 4;
+		h3 {
+			color: $verydarkgrayishblue;
+			font-size: 1.3vw;
+		}
+		p {
+			font-size: 1vw;
+			color: $desaturateddarkblue;
+			line-height: 1.6em;
+			padding: 4% 0;
+		}
+
+		.person {
+			margin-top: auto;
+			font-size: 13px;
+			display: flex;
+			align-items: center;
+		}
+		.person p {
+			display: flex;
+			flex-direction: column;
+		}
+		.name {
+			color: $verydarkgrayishblue;
+			font-weight: 700;
+		}
+		.date {
+			color: $grayishblue;
+		}
+		.img_Size {
+			margin-right: 5%;
+			border-radius: 50%;
+			width: 10%;
+		}
+		.share {
+			position: relative;
+			display: flex;
+			margin-left: auto;
+			margin-right: 2%;
+		}
+		.btn {
+			border-radius: 50%;
+			background-color: $lightgrayishblue;
+			padding: 0.7vw;
+			fill: #6e8098;
+			transition: ease 0.2s;
+		}
+		ion-icon {
+			font-size: 1.5vw;
+			cursor: pointer;
+			
+		}
+		.btn:hover {
+			background-color: $desaturateddarkblue;
+			fill: white;
+			cursor: pointer;
+		}
+	}
+}
+footer {
+	position: absolute;
+	bottom: 0;
+}

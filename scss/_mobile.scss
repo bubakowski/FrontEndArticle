@@ -1,0 +1,120 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $lightgrayishblue;
+	box-sizing: border-box;
+}
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: 0px 10px 100px 10px rgba(65, 65, 65, 0.158);
+	border-radius: 10px 10px 10px 10px;
+	height: 80%;
+	width: 80%;
+	.img {
+		display: flex;
+		background: url(../images/drawers.jpg) no-repeat;
+		background-size: cover;
+		border-radius: 10px 10px 0 0;
+		flex: 3;
+	}
+	section {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		flex: 4;
+		h3 {
+			color: $verydarkgrayishblue;
+			padding: 4%;
+		}
+		p {
+			font-size: 13px;
+			color: $desaturateddarkblue;
+			line-height: 1.6em;
+			padding: 4%;
+		}
+
+		.person {
+			position: relative;
+			margin-top: auto;
+			font-size: 13px;
+			display: flex;
+			align-items: center;
+		}
+		.person p {
+			display: flex;
+			flex-direction: column;
+		}
+		.name {
+			color: $verydarkgrayishblue;
+			font-weight: 700;
+		}
+		.date {
+			color: $grayishblue;
+		}
+		.img_Size {
+			margin-left: 4%;
+			margin-right: 5%;
+			border-radius: 50%;
+			width: 10%;
+		}
+		.share {
+			box-sizing: border-box;
+			position: absolute;
+			display: flex;
+			width: 100%;
+			height: 100%;
+		}
+		.btn {
+			display: flex;
+			position: absolute;
+			right: 10%;
+			top: 50%;
+			transform: translate(0, -50%);
+			border-radius: 50%;
+			background-color: $lightgrayishblue;
+			padding: 1vw;
+			fill: #6e8098;
+			z-index: 3;
+		}
+		ion-icon {
+			font-size: 5vw;
+		}
+		.btn:hover {
+			background-color: $desaturateddarkblue;
+			fill: white;
+			cursor: pointer;
+		}
+	}
+}
+
+#overlay {
+	display: none;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 0 0 10px 10px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: $verydarkgrayishblue;
+
+	span {
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color: $grayishblue;
+		padding: 0 5% 0 10%;
+	}
+	ion-icon {
+		fill: white;
+		padding-right: 3%;
+	}
+}
+footer {
+	position: absolute;
+	bottom: 0;
+}
